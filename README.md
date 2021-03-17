@@ -21,6 +21,7 @@
 ## Usage
 Safe operation
 ```
+NSArray *list = @[@"1", @"2", @"3", @"4", @"5"];
 NSMutableArray *mList = [NSMutableArray arrayWithObject:list];
 [mList check_objectAtIndex:10];
 [mList check_addObject:@"10"];
