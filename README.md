@@ -31,7 +31,8 @@ NSMutableArray *mList = [NSMutableArray arrayWithObject:list];
 ```
 
 Find
->  The find() method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, nil is returned.
+
+The find() method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, nil is returned.
 
 ```
 NSString *findItem = [list find:^BOOL(NSString * _Nonnull item) {
@@ -40,7 +41,8 @@ NSString *findItem = [list find:^BOOL(NSString * _Nonnull item) {
 ```
 
 Some
-> The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
 
 ```
 BOOL isVerifySome = [list some:^BOOL(NSString * _Nonnull item) {
@@ -49,7 +51,8 @@ BOOL isVerifySome = [list some:^BOOL(NSString * _Nonnull item) {
 ```
 
 Every
-> The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+
+The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
 
 ```
 BOOL isVerifyEvery = [list every:^BOOL(NSString * _Nonnull item) {
@@ -58,7 +61,8 @@ BOOL isVerifyEvery = [list every:^BOOL(NSString * _Nonnull item) {
 ```
 
 Filter
-> The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
 
 ```
 NSArray *filterList = [list filter:^BOOL(NSString * _Nonnull item) {
@@ -67,7 +71,8 @@ NSArray *filterList = [list filter:^BOOL(NSString * _Nonnull item) {
 ```
 
 Map
-> The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
 
 ```
 NSArray *mapList = [list map:^id(NSString * _Nonnull item) {
