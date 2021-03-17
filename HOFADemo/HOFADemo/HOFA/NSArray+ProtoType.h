@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 typedef BOOL(^boolCondition)(id item);
-typedef id(^condition)(id item);
+typedef id _Nullable (^condition)(id item);
 @interface NSArray (ProtoType)
 - (id)find:(boolCondition)condition;
 - (BOOL)some:(boolCondition)condition;
