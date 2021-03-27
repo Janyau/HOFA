@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06BA81E7D71546A713B5FA06 /* Pods_HOFADemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C636F5CA66FD37E46F6EEF96 /* Pods_HOFADemo.framework */; };
 		81343F7E26006BC500FD2E8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81343F7D26006BC500FD2E8B /* AppDelegate.m */; };
 		81343F8126006BC500FD2E8B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81343F8026006BC500FD2E8B /* SceneDelegate.m */; };
 		81343F8426006BC500FD2E8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81343F8326006BC500FD2E8B /* ViewController.m */; };
@@ -14,9 +15,6 @@
 		81343F8926006BCC00FD2E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81343F8826006BCC00FD2E8B /* Assets.xcassets */; };
 		81343F8C26006BCC00FD2E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81343F8A26006BCC00FD2E8B /* LaunchScreen.storyboard */; };
 		81343F8F26006BCC00FD2E8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81343F8E26006BCC00FD2E8B /* main.m */; };
-		81343FA926006CF700FD2E8B /* NSArray+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = 81343FA326006CF700FD2E8B /* NSArray+Check.m */; };
-		81343FAA26006CF700FD2E8B /* NSArray+ProtoType.m in Sources */ = {isa = PBXBuildFile; fileRef = 81343FA626006CF700FD2E8B /* NSArray+ProtoType.m */; };
-		81343FAB26006CF700FD2E8B /* NSMutableArray+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = 81343FA826006CF700FD2E8B /* NSMutableArray+Check.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +30,9 @@
 		81343F8B26006BCC00FD2E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81343F8D26006BCC00FD2E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81343F8E26006BCC00FD2E8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		81343FA326006CF700FD2E8B /* NSArray+Check.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Check.m"; sourceTree = "<group>"; };
-		81343FA426006CF700FD2E8B /* NSArray+ProtoType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ProtoType.h"; sourceTree = "<group>"; };
-		81343FA526006CF700FD2E8B /* NSArray+Check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Check.h"; sourceTree = "<group>"; };
-		81343FA626006CF700FD2E8B /* NSArray+ProtoType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ProtoType.m"; sourceTree = "<group>"; };
-		81343FA726006CF700FD2E8B /* NSMutableArray+Check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Check.h"; sourceTree = "<group>"; };
-		81343FA826006CF700FD2E8B /* NSMutableArray+Check.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Check.m"; sourceTree = "<group>"; };
-		81343FAD26006F8E00FD2E8B /* hofa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hofa.h; sourceTree = "<group>"; };
+		C2C2AE121F0361ADE55DDD68 /* Pods-HOFADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOFADemo.release.xcconfig"; path = "Target Support Files/Pods-HOFADemo/Pods-HOFADemo.release.xcconfig"; sourceTree = "<group>"; };
+		C636F5CA66FD37E46F6EEF96 /* Pods_HOFADemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOFADemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE51A617819EE38299E917B /* Pods-HOFADemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOFADemo.debug.xcconfig"; path = "Target Support Files/Pods-HOFADemo/Pods-HOFADemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BA81E7D71546A713B5FA06 /* Pods_HOFADemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219C0AC980797117CFFBC3EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C636F5CA66FD37E46F6EEF96 /* Pods_HOFADemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74E8A7BDC6867A06100C4CD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDE51A617819EE38299E917B /* Pods-HOFADemo.debug.xcconfig */,
+				C2C2AE121F0361ADE55DDD68 /* Pods-HOFADemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		81343F7026006BC500FD2E8B = {
 			isa = PBXGroup;
 			children = (
 				81343F7B26006BC500FD2E8B /* HOFADemo */,
 				81343F7A26006BC500FD2E8B /* Products */,
+				74E8A7BDC6867A06100C4CD0 /* Pods */,
+				219C0AC980797117CFFBC3EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +85,6 @@
 		81343F7B26006BC500FD2E8B /* HOFADemo */ = {
 			isa = PBXGroup;
 			children = (
-				81343FA226006CB400FD2E8B /* HOFA */,
 				81343F7C26006BC500FD2E8B /* AppDelegate.h */,
 				81343F7D26006BC500FD2E8B /* AppDelegate.m */,
 				81343F7F26006BC500FD2E8B /* SceneDelegate.h */,
@@ -87,20 +100,6 @@
 			path = HOFADemo;
 			sourceTree = "<group>";
 		};
-		81343FA226006CB400FD2E8B /* HOFA */ = {
-			isa = PBXGroup;
-			children = (
-				81343FAD26006F8E00FD2E8B /* hofa.h */,
-				81343FA526006CF700FD2E8B /* NSArray+Check.h */,
-				81343FA326006CF700FD2E8B /* NSArray+Check.m */,
-				81343FA426006CF700FD2E8B /* NSArray+ProtoType.h */,
-				81343FA626006CF700FD2E8B /* NSArray+ProtoType.m */,
-				81343FA726006CF700FD2E8B /* NSMutableArray+Check.h */,
-				81343FA826006CF700FD2E8B /* NSMutableArray+Check.m */,
-			);
-			path = HOFA;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81343F9226006BCC00FD2E8B /* Build configuration list for PBXNativeTarget "HOFADemo" */;
 			buildPhases = (
+				16345988B5A29DDE5E95F4A5 /* [CP] Check Pods Manifest.lock */,
 				81343F7526006BC500FD2E8B /* Sources */,
 				81343F7626006BC500FD2E8B /* Frameworks */,
 				81343F7726006BC500FD2E8B /* Resources */,
+				E07D325025F395050FF58F31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,16 +166,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16345988B5A29DDE5E95F4A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HOFADemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E07D325025F395050FF58F31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HOFADemo/Pods-HOFADemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HOFADemo/Pods-HOFADemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HOFADemo/Pods-HOFADemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		81343F7526006BC500FD2E8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				81343F8426006BC500FD2E8B /* ViewController.m in Sources */,
-				81343FA926006CF700FD2E8B /* NSArray+Check.m in Sources */,
-				81343FAB26006CF700FD2E8B /* NSMutableArray+Check.m in Sources */,
 				81343F7E26006BC500FD2E8B /* AppDelegate.m in Sources */,
-				81343FAA26006CF700FD2E8B /* NSArray+ProtoType.m in Sources */,
 				81343F8F26006BCC00FD2E8B /* main.m in Sources */,
 				81343F8126006BC500FD2E8B /* SceneDelegate.m in Sources */,
 			);
@@ -316,6 +356,7 @@
 		};
 		81343F9326006BCC00FD2E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE51A617819EE38299E917B /* Pods-HOFADemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +375,7 @@
 		};
 		81343F9426006BCC00FD2E8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C2AE121F0361ADE55DDD68 /* Pods-HOFADemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

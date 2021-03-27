@@ -93,7 +93,7 @@ NSArray *mapList = [list map:^id(NSString * _Nonnull item) {
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate HOFA into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'HOFA', '~> 0.0.1'
+pod 'HOFA', '~> 1.0.0'
 ```
 
 ### Manually

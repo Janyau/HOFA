@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "HOFA/hofa.h"
+#import <hofa.h>
 @interface ViewController ()
 
 @end
