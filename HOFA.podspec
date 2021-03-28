@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.author             = { "Janyau" => "janyaugoo@gmail.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/Janyau/HOFA.git", :tag => "#{s.version}" }
-  s.source_files  = "HOFA", "HOFA/**/*.{h,m}"
-  s.public_header_files = "HOFA/**/hofa.h"
-  s.framework  = "Foundation"
+  s.source_files  = "HOFA/*.{h,m}"
+  s.public_header_files = "HOFA/*.h"
+  s.frameworks  = "Foundation"
   s.requires_arc = true
 
 end
