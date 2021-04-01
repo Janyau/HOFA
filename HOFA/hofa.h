@@ -10,4 +10,5 @@
 #import "NSArray+Check.h"
 #import "NSMutableArray+Check.h"
 #import "NSArray+ProtoType.h"
+#import "NSObject+Throttle.h"
 #endif /* hofa_h */
