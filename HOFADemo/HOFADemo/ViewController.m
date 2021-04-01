@@ -63,6 +63,14 @@
         return obj;
     }];
     NSLog(@"mapList-->%@", mapList);
+    
+    
+    fnBlock debounce = [NSObject debounceWithBlock:^{
+        NSLog(@"----------debounce-----------");
+    } waitTime:3.0];
+    debounce();
+    debounce();
+    debounce();
 }
 
 

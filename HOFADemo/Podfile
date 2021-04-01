@@ -4,7 +4,7 @@ platform :ios, '9.0'
 target 'HOFADemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'HOFA', '~> 0.0.1'
+  pod 'HOFA', '~> 1.0.1'
   # Pods for HOFADemo
 
 end

@@ -12,7 +12,7 @@
     __block NSInteger haveTimer = NO;
     fnBlock returnFn = ^{
         if (haveTimer) {
-            [NSObject cancelPreviousPerformRequestsWithTarget:self];
+            [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(performFn:) object:fn];
             haveTimer = NO;
         }
         [self performSelector:@selector(performFn:) withObject:fn afterDelay:waitTime];
