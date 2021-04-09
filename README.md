@@ -19,6 +19,9 @@
 - Xcode 11+
 
 ## Usage
+
+[中文文档](https://www.jianshu.com/p/0f9dfbb155a5)
+
 Safe operation
 ```
 NSArray *list = @[@"1", @"2", @"3", @"4", @"5"];
