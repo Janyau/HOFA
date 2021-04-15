@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HOFA"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A lightweight Objective-C high-order functions library."
   s.description  = <<-DESC
     HOFA is an array-related tool, including safe operation of arrays and custom high-order functions.
