@@ -24,4 +24,5 @@
 + (void)performFn:(fnBlock)fn {
     fn();
 }
+
 @end

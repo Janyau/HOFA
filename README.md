@@ -19,6 +19,9 @@
 - Xcode 11+
 
 ## Usage
+
+[中文文档](https://www.jianshu.com/p/0f9dfbb155a5)
+
 Safe operation
 ```
 NSArray *list = @[@"1", @"2", @"3", @"4", @"5"];
@@ -103,7 +106,7 @@ If the function is called all the time, it will not be executed immediately, but
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate HOFA into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'HOFA', '~> 1.0.1'
+pod 'HOFA', '~> 1.0.2'
 ```
 
 ### Manually
