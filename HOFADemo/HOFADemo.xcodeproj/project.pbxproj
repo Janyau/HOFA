@@ -15,6 +15,10 @@
 		81343F8926006BCC00FD2E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81343F8826006BCC00FD2E8B /* Assets.xcassets */; };
 		81343F8C26006BCC00FD2E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81343F8A26006BCC00FD2E8B /* LaunchScreen.storyboard */; };
 		81343F8F26006BCC00FD2E8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81343F8E26006BCC00FD2E8B /* main.m */; };
+		81A28D0E2654DE160073BE5E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B315912654B41C0032A8B0 /* UIView+Frame.m */; };
+		81A28D102654DE1F0073BE5E /* UIDebounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF15E026537F430011821C /* UIDebounceViewController.m */; };
+		81A28D142654DE9A0073BE5E /* circle_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A28D122654DE990073BE5E /* circle_gray.png */; };
+		81A28D152654DE9A0073BE5E /* circle_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A28D132654DE990073BE5E /* circle_green.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,16 @@
 		81343F8B26006BCC00FD2E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81343F8D26006BCC00FD2E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81343F8E26006BCC00FD2E8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		815752622627FFCB0019AFFA /* GlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalMacro.h; sourceTree = "<group>"; };
+		8161C4FC262E954A0036189C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		81A28CED2654D0180073BE5E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		81A28CEE2654D0180073BE5E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		81A28D122654DE990073BE5E /* circle_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_gray.png; sourceTree = "<group>"; };
+		81A28D132654DE990073BE5E /* circle_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_green.png; sourceTree = "<group>"; };
+		81B315912654B41C0032A8B0 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		81B315922654B41C0032A8B0 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		81CF15DF26537F430011821C /* UIDebounceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDebounceViewController.h; sourceTree = "<group>"; };
+		81CF15E026537F430011821C /* UIDebounceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDebounceViewController.m; sourceTree = "<group>"; };
 		C2C2AE121F0361ADE55DDD68 /* Pods-HOFADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOFADemo.release.xcconfig"; path = "Target Support Files/Pods-HOFADemo/Pods-HOFADemo.release.xcconfig"; sourceTree = "<group>"; };
 		C636F5CA66FD37E46F6EEF96 /* Pods_HOFADemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOFADemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE51A617819EE38299E917B /* Pods-HOFADemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOFADemo.debug.xcconfig"; path = "Target Support Files/Pods-HOFADemo/Pods-HOFADemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +99,8 @@
 		81343F7B26006BC500FD2E8B /* HOFADemo */ = {
 			isa = PBXGroup;
 			children = (
+				8161FEE726522E7E0016338B /* Utils */,
+				8161C4FB262E953C0036189C /* Icon */,
 				81343F7C26006BC500FD2E8B /* AppDelegate.h */,
 				81343F7D26006BC500FD2E8B /* AppDelegate.m */,
 				81343F7F26006BC500FD2E8B /* SceneDelegate.h */,
@@ -92,12 +108,36 @@
 				81343F8226006BC500FD2E8B /* ViewController.h */,
 				81343F8326006BC500FD2E8B /* ViewController.m */,
 				81343F8526006BC500FD2E8B /* Main.storyboard */,
+				81A28CED2654D0180073BE5E /* SceneDelegate.h */,
+				81A28CEE2654D0180073BE5E /* SceneDelegate.m */,
+				81CF15DF26537F430011821C /* UIDebounceViewController.h */,
+				81CF15E026537F430011821C /* UIDebounceViewController.m */,
 				81343F8826006BCC00FD2E8B /* Assets.xcassets */,
 				81343F8A26006BCC00FD2E8B /* LaunchScreen.storyboard */,
 				81343F8D26006BCC00FD2E8B /* Info.plist */,
 				81343F8E26006BCC00FD2E8B /* main.m */,
+				815752622627FFCB0019AFFA /* GlobalMacro.h */,
 			);
 			path = HOFADemo;
+			sourceTree = "<group>";
+		};
+		8161C4FB262E953C0036189C /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				8161C4FC262E954A0036189C /* icon.png */,
+				81A28D122654DE990073BE5E /* circle_gray.png */,
+				81A28D132654DE990073BE5E /* circle_green.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		8161FEE726522E7E0016338B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				81B315922654B41C0032A8B0 /* UIView+Frame.h */,
+				81B315912654B41C0032A8B0 /* UIView+Frame.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +198,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A28D152654DE9A0073BE5E /* circle_green.png in Resources */,
 				81343F8C26006BCC00FD2E8B /* LaunchScreen.storyboard in Resources */,
 				81343F8926006BCC00FD2E8B /* Assets.xcassets in Resources */,
+				81A28D142654DE9A0073BE5E /* circle_gray.png in Resources */,
 				81343F8726006BC500FD2E8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A28D102654DE1F0073BE5E /* UIDebounceViewController.m in Sources */,
+				81A28D0E2654DE160073BE5E /* UIView+Frame.m in Sources */,
 				81343F8426006BC500FD2E8B /* ViewController.m in Sources */,
 				81343F7E26006BC500FD2E8B /* AppDelegate.m in Sources */,
 				81343F8F26006BCC00FD2E8B /* main.m in Sources */,
@@ -362,6 +406,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 556KBLPWA9;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = HOFADemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

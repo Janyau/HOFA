@@ -7,6 +7,10 @@
 
 #import "ViewController.h"
 #import <hofa.h>
+#import "UIDebounceViewController.h"
+#import "GlobalMacro.h"
+#import "UIView+Frame.h"
+
 @interface ViewController ()
 
 @end
@@ -71,7 +75,27 @@
     debounce();
     debounce();
     debounce();
+    
+    [self createUIView];
 }
 
+- (void)createUIView {
+    UIButton *fireBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+    [fireBtn setBackgroundImage:[UIImage imageNamed:@"circle_green"] forState:UIControlStateNormal];
+    [fireBtn setBackgroundImage:[UIImage imageNamed:@"circle_gray"] forState:UIControlStateHighlighted];
+    [fireBtn setTitle:@"Next" forState:UIControlStateNormal];
+    fireBtn.titleLabel.font = [UIFont systemFontOfSize:30];
+    [fireBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    fireBtn.layer.cornerRadius = 40;
+    fireBtn.layer.masksToBounds = YES;
+    fireBtn.centerX = UISCREEN_WIDTH / 2.0;
+    fireBtn.centerY = UISCREEN_HEIGHT / 2.0;
+    [fireBtn addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:fireBtn];
+}
 
+- (void)next {
+    UIDebounceViewController *vc = [[UIDebounceViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end
