@@ -19,7 +19,7 @@
 - Xcode 11+
 
 ## Example
-<a href="https://imgtu.com/i/2ncEeH"><img src="https://z3.ax1x.com/2021/06/01/2ncEeH.md.gif" alt="2ncEeH.gif" border="0" />debounce.gif</a>
+<a href="https://imgtu.com/i/2ncEeH">See debounce.gif</a>
 
 ## Usage
 
