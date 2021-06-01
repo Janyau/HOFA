@@ -18,6 +18,9 @@
 - iOS 9.0+ / macOS 9.0+ / tvOS 9.0+ / watchOS 9.0+
 - Xcode 11+
 
+## Example
+[![debounce.gif](https://z3.ax1x.com/2021/06/01/2ncEeH.md.gif)](https://imgtu.com/i/2ncEeH)
+
 ## Usage
 
 [中文文档](https://www.jianshu.com/p/0f9dfbb155a5)
