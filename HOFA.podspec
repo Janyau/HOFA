@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HOFA"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "A lightweight Objective-C high-order functions library."
   s.description  = <<-DESC
     HOFA is an array-related tool, including safe operation of arrays and custom high-order functions.
@@ -15,4 +15,9 @@ Pod::Spec.new do |s|
   s.frameworks  = "Foundation"
   s.requires_arc = true
 
+  s.subspec 'Timer' do |ss|
+    ss.source_files = 'HOFA/Timer/**/*'
+    ss.frameworks = 'Foundation'
+    ss.ios.deployment_target = '9.0'
+  end
 end

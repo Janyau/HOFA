@@ -10,9 +10,10 @@
 #import "UIDebounceViewController.h"
 #import "GlobalMacro.h"
 #import "UIView+Frame.h"
+#import "HFTimer.h"
 
 @interface ViewController ()
-
+@property(nonatomic, strong) NSString *taskID;
 @end
 
 @implementation ViewController
@@ -98,4 +99,26 @@
     UIDebounceViewController *vc = [[UIDebounceViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (void)executeTimerEvent {
+    // execute with block
+    __weak typeof(self) weakself = self;
+    self.taskID = [HFTimer executeTask:^{
+        [weakself test];
+    } start:2.0 interval:1.0 repeat:NO asyn:NO];
+
+    // execute with target
+    self.taskID = [HFTimer executeSelector:@selector(test) withObject:self start:2.0 interval:1.0 repeat:YES asyn:NO];
+}
+
+- (void)test {
+    NSLog(@"%s",__func__);
+}
+
+
+- (void)dealloc {
+    [HFTimer cancelTaskWithID:self.taskID];
+    NSLog(@"%s",__func__);
+}
+
 @end
