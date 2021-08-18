@@ -11,4 +11,5 @@
 #import "NSMutableArray+Check.h"
 #import "NSArray+ProtoType.h"
 #import "NSObject+Throttle.h"
+#import "HFTimer.h"
 #endif /* hofa_h */

@@ -1,16 +1,24 @@
 PODS:
-  - HOFA (1.0.2)
+  - HOFA (1.0.4):
+    - HOFA/ProtoType (= 1.0.4)
+    - HOFA/Safe (= 1.0.4)
+    - HOFA/Throttle (= 1.0.4)
+    - HOFA/Timer (= 1.0.4)
+  - HOFA/ProtoType (1.0.4)
+  - HOFA/Safe (1.0.4)
+  - HOFA/Throttle (1.0.4)
+  - HOFA/Timer (1.0.4)
 
 DEPENDENCIES:
-  - HOFA (~> 1.0.1)
+  - HOFA (from `/Users/ios/Desktop/gitSpot/HOFA/`)
 
-SPEC REPOS:
-  trunk:
-    - HOFA
+EXTERNAL SOURCES:
+  HOFA:
+    :path: "/Users/ios/Desktop/gitSpot/HOFA/"
 
 SPEC CHECKSUMS:
-  HOFA: 3c2bf68a2a70954a2bb5a413516db8fc5cc17d78
+  HOFA: ac6376f7ebb6f754f0371017c292fc7ecc1a4e24
 
-PODFILE CHECKSUM: 7daa34058d73da0621455ae6781ae44953d010e4
+PODFILE CHECKSUM: a0f8aba5f1557641905f4585368cd876d18eeff3
 
 COCOAPODS: 1.10.0

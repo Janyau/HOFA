@@ -69,14 +69,6 @@
     }];
     NSLog(@"mapList-->%@", mapList);
     
-    
-    fnBlock debounce = [NSObject debounceWithBlock:^{
-        NSLog(@"----------debounce-----------");
-    } waitTime:3.0];
-    debounce();
-    debounce();
-    debounce();
-    
     [self createUIView];
 }
 
@@ -100,6 +92,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+#pragma mark - Timer
 - (void)executeTimerEvent {
     // execute with block
     __weak typeof(self) weakself = self;

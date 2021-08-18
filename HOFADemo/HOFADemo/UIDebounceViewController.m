@@ -14,6 +14,7 @@
 @property(nonatomic, strong) UILabel *screenLabel;
 @property(nonatomic, assign) NSInteger mode;
 @property(nonatomic, copy) fnBlock increaseDebounce;
+@property(nonatomic, copy) fnBlock increaseThrottle;
 @end
 
 @implementation UIDebounceViewController
@@ -57,11 +58,12 @@
     self.screenLabel = screenLabel;
     
     
-    UISegmentedControl *segCtrl = [[UISegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 150, 44)];
+    UISegmentedControl *segCtrl = [[UISegmentedControl alloc] initWithFrame:CGRectMake(0, 0, 75*3, 44)];
     segCtrl.top = fireBtn.bottom + 80;
     segCtrl.centerX = fireBtn.centerX;
-    [segCtrl insertSegmentWithTitle:@"普通" atIndex:0 animated:NO];
-    [segCtrl insertSegmentWithTitle:@"防抖" atIndex:1 animated:NO];
+    [segCtrl insertSegmentWithTitle:@"normal" atIndex:0 animated:NO];
+    [segCtrl insertSegmentWithTitle:@"debounce" atIndex:1 animated:NO];
+    [segCtrl insertSegmentWithTitle:@"throttle" atIndex:2 animated:NO];
     segCtrl.selectedSegmentIndex = 0;
     [segCtrl addTarget:self action:@selector(segmentChange:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:segCtrl];
@@ -75,10 +77,17 @@
             __weak typeof(self) weakSelf = self;
             self.increaseDebounce = [NSObject debounceWithBlock:^{
                 [weakSelf updateValue];
-            } waitTime:1.0];
+            } waitTime:3.0];
         }
         self.increaseDebounce();
-        self.increaseDebounce();
+    } else if (self.mode == 2) {
+        if (!_increaseThrottle) {
+            __weak typeof(self) weakSelf = self;
+            _increaseThrottle = [NSObject throttleWithBlock:^{
+                [weakSelf updateValue];
+            } executeBeforeCycle:NO waitTime:3.0];
+        }
+        self.increaseThrottle();
     }
 }
 
